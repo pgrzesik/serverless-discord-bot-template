@@ -1,0 +1,1 @@
+# serverless-discord-bot-template
