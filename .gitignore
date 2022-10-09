@@ -18,3 +18,8 @@ var/
 
 # Serverless directories
 .serverless
+node_modules
+
+# Generic files
+.env
+package-lock.json

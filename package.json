@@ -1,0 +1,22 @@
+{
+  "name": "serverless-discord-bot-template",
+  "version": "1.0.0",
+  "description": "Basic template for building a Python Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgrzesik/serverless-discord-bot-template.git"
+  },
+  "author": "pj.grzesik@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pgrzesik/serverless-discord-bot-template/issues"
+  },
+  "homepage": "https://github.com/pgrzesik/serverless-discord-bot-template#readme",
+  "devDependencies": {
+    "serverless-python-requirements": "^5.4.0"
+  }
+}
