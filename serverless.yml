@@ -12,3 +12,6 @@ functions:
       - httpApi:
           path: /
           method: get
+
+plugins:
+  - serverless-python-requirements
