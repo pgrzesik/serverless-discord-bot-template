@@ -1,0 +1,14 @@
+service: discord-bot
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+
+functions:
+  main:
+    handler: src/handler.main
+    events:
+      - httpApi:
+          path: /
+          method: get
