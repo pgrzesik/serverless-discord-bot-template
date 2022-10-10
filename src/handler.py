@@ -12,6 +12,14 @@ def main(event, context):
             'type': 1,
         }
 
+    if body['data'].get('name') == 'dummy':
+        return json.dumps({
+            'type': 4,
+            'data': {
+                'content': 'dummy response',
+            }
+        })
+
     return {
       "type": 5,
     }
