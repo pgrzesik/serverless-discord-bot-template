@@ -1,12 +1,17 @@
 import json
 
 
-def hello(event, context):
-    body = {
-        "message": "Go Serverless v3.0! Your function executed successfully!",
-        "input": event,
+def main(event, context):
+    # Verify signature coming from Discord
+    verify_signature(event)
+
+
+    body = event.get('body')
+    if body['type'] == 1:
+        return {
+            'type': 1,
+        }
+
+    return {
+      "type": 5,
     }
-
-    response = {"statusCode": 200, "body": json.dumps(body)}
-
-    return response

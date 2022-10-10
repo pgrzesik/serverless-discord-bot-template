@@ -4,14 +4,21 @@ frameworkVersion: '3'
 provider:
   name: aws
   runtime: python3.9
+  deploymentMethod: direct
+  architecture: arm64
 
 functions:
   main:
     handler: src/handler.main
     events:
-      - httpApi:
+      - http:
           path: /
-          method: get
+          method: POST
+          integration: lambda
 
 plugins:
   - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
